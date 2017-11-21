@@ -11,6 +11,7 @@
 ## Bundling
 
 * `flatpak build-bundle repo firefox.flatpak org.mozilla.Firefox`
+* `flatpak build-import-bundle repo firefox.flatpak`
 
 ## Issues
 * Flash plugin not installed correctly
