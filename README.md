@@ -16,3 +16,7 @@
 ## Issues
 * Flash plugin not installed correctly
 * Java plugin not installed correctly
+* Error when install `firefox.flatpak`
+```
+error: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._g_2dio_2derror_2dquark.Code0: Extra data missing in detached metadata
+````
