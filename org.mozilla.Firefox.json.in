@@ -23,7 +23,7 @@
     "--extra-data=as.xpi:1ba6874911e21bc052fafdeae0637a59d05cbcf9602cf7007a685d4b35363525:491076::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/as.xpi",
     "--extra-data=ast.xpi:2bc6b317ae7d4c433e21ba2ebd1d72bf9587edfc9347ca9924cd12fcdd157426:455503::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/ast.xpi",
     "--extra-data=az.xpi:3a60286c17bc34e05550e69b744a27fb0f6e9960cc3aba4c4796150f2bab2bad:466043::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/az.xpi",
-    "--extra-data=bg.xpi:eaea8efbfb73ce7d9f64cf534ac0b64b48fc231f82f40001a53062c35ba30e85:510351::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/bg.xpi",
+    "--extra-data=bg.xpi:13db806a1213fb759f4489f6931a9c9309ad7fe3e6f9baeb55796efc9f60f358:510351::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/bg.xpi",
     "--extra-data=bn-BD.xpi:3ccca355b507383473799481468f366c5d9634034863bdd519ab733867d17851:527188::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/bn-BD.xpi",
     "--extra-data=bn-IN.xpi:0c27d535c64640fd1a1571295257867bda0d637f0559c62ce6637478bcdc38ab:516175::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/bn-IN.xpi",
     "--extra-data=br.xpi:1fa26a6217a90f22ac169e065237e94cbc290d75a42cfbe48f4635cc51be1412:451867::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/br.xpi",
@@ -55,7 +55,7 @@
     "--extra-data=gd.xpi:b0a6fd154dfdb4378b7749ec8535d6e59ec47142dda4be1fda08573c5aebc38e:465123::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/gd.xpi",
     "--extra-data=gl.xpi:ab1699b8727aa79e80f4c47b20e5355fb0fecb68c8e27f71791a1cbdc3d8d1ca:452031::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/gl.xpi",
     "--extra-data=gn.xpi:659fd0c6cb77443c38781ddd04039627e725be55536e6f78031c7387bf935574:471956::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/gn.xpi",
-    "--extra-data=gu-IN.xpi:0b3145eb603e6216a2319362d56d849a23f60113efe006f2d365a069ae94e43f:471956::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/gu-IN.xpi",
+    "--extra-data=gu-IN.xpi:0b3145eb603e6216a2319362d56d849a23f60113efe006f2d365a069ae94e43f:511989::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/gu-IN.xpi",
     "--extra-data=he.xpi:d7d45cd393fdbc2868cdbacb1dc63958164f561dcfc08603c0decfe83fae7c2f:471922::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/he.xpi",
     "--extra-data=hi-IN.xpi:e9b8f7e973660f2a9574769286cb72a963847fd765a6ba1f3192cdd3139d4d92:526109::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/hi-IN.xpi",
     "--extra-data=hr.xpi:7a10f3862dbbf8b894b6fa5e2af16f576a596621ce0d39dd0c7ffa94bf87f544:460722::https://archive.mozilla.org/pub/firefox/releases/57.0/linux-x86_64/xpi/hr.xpi",
@@ -117,7 +117,7 @@
       "sources": [
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3_amd64.deb",
+          "url": "http://ftp.debian.org/debian/pool/main/u/unzip/unzip_6.0-16+deb8u3_amd64.deb",
           "sha256": "1ccc48a0a5d9a5fd655f7d319ca788f4de6cc65a7d33b525f2c5010a2fe9e224",
           "dest-filename": "unzip.deb"
         },
@@ -134,9 +134,26 @@
       "sources": [
         {
           "type": "file",
-          "url": "http://ftp.de.debian.org/debian/pool/main/x/xmlstarlet/xmlstarlet_1.6.1-1_amd64.deb",
+          "url": "http://ftp.debian.org/debian/pool/main/x/xmlstarlet/xmlstarlet_1.6.1-1_amd64.deb",
           "sha256": "754dc23a4836f156e111c3c7414f5438be653a6261745ef88bca5a4f5b53f133",
           "dest-filename": "xmlstarlet.deb"
+        },
+        {
+          "type": "file",
+          "path": "binarydeb-Makefile",
+          "dest-filename": "Makefile"
+        }
+      ]
+    },
+    {
+      "name": "wget",
+      "no-autogen": true,
+      "sources": [
+        {
+          "type": "file",
+          "url": "http://ftp.debian.org/debian/pool/main/w/wget/wget_1.19.2-1_amd64.deb",
+          "sha256": "1f93f7f3c92d41036385323a5942fa71cf550b5d2e7da9da66fa516dd879cf88",
+          "dest-filename": "wget.deb"
         },
         {
           "type": "file",
